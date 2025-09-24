@@ -3,7 +3,6 @@ import { RiMenu2Fill } from "react-icons/ri";
 
 const Navbar = ({ theme, onToggleTheme, onToggleSidebar }) => {
   return (
-    <div>
       <header className="flex items-center justify-between px-4 py-3 border-b bg-white dark:bg-slate-800 dark:border-slate-700">
         {/* left side */}
         <div className="flex items-center gap-2">
@@ -39,7 +38,6 @@ const Navbar = ({ theme, onToggleTheme, onToggleSidebar }) => {
           </div>
         </div>
       </header>
-    </div>
   );
 };
 

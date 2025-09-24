@@ -53,7 +53,7 @@ function App() {
           ></div>
         )}
 
-        <main className="flex-1 p-4 bg-gray-50 dark:bg-slate-800">
+        <main className="w-full flex-1 p-4 bg-gray-50 dark:bg-slate-800">
           {activePage === "dashboard" && (
             <>
               <StatsCards />
