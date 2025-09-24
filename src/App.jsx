@@ -6,7 +6,10 @@ import EventChart from "./components/EventChart";
 import RecentActivity from "./components/RecentActivity";
 
 function App() {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") || "light"
+  );
 
   const [openSideBar, setOpenSideBar] = useState(false);
   const [activePage, setActivePage] = useState("dashboard");
@@ -53,7 +56,7 @@ function App() {
           ></div>
         )}
 
-        <main className="w-full flex-1 p-4 bg-gray-50 dark:bg-slate-800">
+        <main className="w-full p-4 bg-gray-50 dark:bg-slate-800">
           {activePage === "dashboard" && (
             <>
               <StatsCards />

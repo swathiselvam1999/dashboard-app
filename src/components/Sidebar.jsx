@@ -14,7 +14,7 @@ const Sidebar = ({ isOpen, onSelect, activePage }) => {
       className={`bg-white dark:bg-slate-900 border-r dark:border-slate-700
   w-64 p-4 transition-transform transform
   ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
-  fixed top-0 left-0 z-50
+  fixed h-full top-0 left-0 z-50
   md:relative md:h-[150vh]`}
     >
       <ul className="space-y-4">
@@ -25,7 +25,10 @@ const Sidebar = ({ isOpen, onSelect, activePage }) => {
           <RiDashboardFill size={20} />
           <span>Dashboard</span>
         </li>
-        <li className={liClass("reports")} onClick={() => onSelect("reports")}>
+        <li 
+          className={liClass("reports")} 
+          onClick={() => onSelect("reports")}
+        >
           <RiFile2Fill size={20} />
           <span>Reports</span>
         </li>
